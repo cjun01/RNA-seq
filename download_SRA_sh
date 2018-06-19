@@ -11,3 +11,5 @@ for i in "SRR"{3569111..3569146};
 do fastq-dump $1;
 
 Done
+
+#git push -u origin master
