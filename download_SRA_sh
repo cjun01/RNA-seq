@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --account=def-banniza
+#SBATCH --job-name=download_SRA
+#SBATCH --time=05:00:00
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=8G
+
+
+module load sra-toolkit/2.8.2-1
+for i in "SRR"{3569111..3569146};
+do fastq-dump $1;
+
+Done
